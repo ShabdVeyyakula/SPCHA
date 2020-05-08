@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SPCHA</title>
+</head>
+<body>
+    
+
+    <div class="topnav">
+        <h1 style="color: white; margin-left: 30px;">Karel The Dog</h1>
+      </div>
+
+      <h1 style="margin-top: 200px; margin-left: 50px;">
+          Karel the Dog
+      </h1>
+
+      <div>
+        <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+            <h2>
+                1.1.4: Your First Karel Program
+            </h2>
+            <div>
+                  <pre>
+move();
+move();
+move();
+move();
+takeBall();
+                  </pre>
+            </div>
+          </div>
+    </div>
+    <div>
+        <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+            <h2>
+                1.1.5: Short Stack
+            </h2>
+            <div>
+                  <pre>
+move();
+putBall();
+putBall();
+move();
+                  </pre>
+            </div>
+          </div>
+    </div>
+    <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.2.4: Make a Tower
+        </h2>
+        <div>
+              <pre>
+move();
+putBall();
+turnLeft();
+move();
+putBall();
+move();
+putBall();
+move();
+turnLeft();
+turnLeft();
+turnLeft();
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.2.5: Pyramid of Karel
+        </h2>
+        <div>
+              <pre>
+putBall();
+move();
+putBall();
+move();
+putBall();
+turnLeft();
+move();
+putBall();
+turnLeft();
+move();
+putBall();
+turnLeft();
+turnLeft();
+turnLeft();
+move();
+turnLeft();
+turnLeft();
+turnLeft();
+move();
+putBall();
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.3.4: Tower Karel
+        </h2>
+        <div>
+              <pre>
+public class TowerKarel extends Karel
+    {
+                
+        public void run()
+            {
+                move();
+                putBall();
+                turnLeft();
+                move();
+                putBall();
+                move();
+                putBall();
+                move();
+                turnLeft();
+                turnLeft();
+                turnLeft();
+            }
+    }
+              </pre>
+        </div>
+      </div>
+
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.3.5: Gold Medal Karel
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class GoldMedalKarel extends Karel
+    {
+                            
+        public void run()
+            {
+                move();
+                putBall();
+                move();
+                putBall();
+                move();
+                putBall();
+                turnLeft();
+                move();
+                turnLeft();
+                move();
+                putBall();
+                turnLeft();
+                turnLeft();
+                turnLeft();
+                move();
+                turnLeft();
+                turnLeft();
+                turnLeft();
+                        
+                                
+                }   
+                        
+    }
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.3.6: Maze Karel
+        </h2>
+        <div>
+              <pre>
+                <span>
+// This program has Karel solve the maze and find the ball
+class MazeKarel extends Karel
+{
+    public void run()
+    {
+        move();
+        move();
+        move();
+        move();
+        turnLeft();
+        move();
+        move();
+        move();
+        move();
+        turnLeft();
+        move();
+        move();
+        
+        move();
+        turnLeft();
+        move();
+        move();
+        move();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        move();
+        move();
+        move();
+        move();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        move();
+        move();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        turnLeft();
+        move();
+        turnLeft();
+        move();
+        turnLeft();
+        turnLeft();
+        turnLeft();
+        move();
+        move();
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.4.4: Slide Karel
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class SlideKarel extends Karel
+{
+    public void run()
+    {
+        putBall();
+        move();
+        turnRight();
+        move();
+        putBall();
+        turnLeft();
+        move();
+        turnRight();
+        move();
+        putBall();
+        turnLeft();
+    }
+    
+    private void turnRight()
+    {
+        turnLeft();
+        turnLeft();
+        turnLeft();
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.4.5: Fireman Karel
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class SlideKarel extends Karel
+{
+    public void run()
+    {
+        turnRight();
+        move();
+        move();
+        move();
+        turnLeft();
+    
+    
+    }
+    private void turnRight()
+    {
+        turnLeft();
+        turnLeft();
+        turnLeft();
+    }
+
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.5.4: Planting Bushes
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class KarelProgram extends Karel
+{
+    public void run()
+    {
+        putInPosition();
+        makeBush();
+        putInPosition();
+        makeBush();
+        move();
+
+    }
+    
+    private void makeBush()
+    {
+        turnLeft();
+        putBall();
+        move();
+        putBall();
+        turnRight();
+        move();
+        putBall();
+        turnRight();
+        move();
+        putBall();
+        turnLeft();
+        
+    }
+    
+    private void turnRight()
+    {
+        turnLeft();
+        turnLeft();
+        turnLeft();
+    }
+    
+    private void putInPosition()
+    {
+        move();
+        move();
+        move();
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.5.5: Mario Karel
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class MarioKarel extends Karel
+{
+    public void run()
+    {
+        move();
+        collectCoins();
+        move();
+        move();
+        collectCoins();
+        move();
+        move();
+        collectCoins();
+        move();
+        move();
+        collectCoins();
+        
+    }
+    
+    private void collectCoins()
+    {
+        turnLeft();
+        move();
+        move();
+        move();
+        takeBall();
+        takeBall();
+        turnRight();
+        turnRight();
+        move();
+        move();
+        move();
+        turnLeft();
+        
+    }
+    private void turnRight()
+    {
+        turnLeft();
+        turnLeft();
+        turnLeft();
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.6.4: The Two Towers
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class TwoTowersKarel extends Karel
+{
+
+    public void run()
+    {
+        buildTower();
+        comeBack();
+        move();
+        buildTower();
+        move();
+        turnRight();
+    }
+    
+    private void buildTower()
+    {
+        move();
+        putBall();
+        turnLeft();
+        move();
+        putBall();
+        move();
+        putBall();
+    }
+    
+    private void comeBack()
+    {
+        turnLeft();
+        turnLeft();
+        move();
+        move();
+        turnLeft();
+    }
+    private void turnRight()
+        {
+            turnLeft();
+            turnLeft();
+            turnLeft();
+        }
+
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.6.5: Planting Flowers
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class TwoTowersKarel extends Karel
+{
+
+    public void run()
+    {
+        putInPosition1();
+        makeFlower();
+        putInPosition1();
+        makeFlower();
+        putInPosition();
+        putInPosition();
+        putInPosition();
+        putInPosition();
+        putInPosition();
+        putInPosition();
+    }
+    
+    private void makeFlower()
+    {
+        turnLeft();
+        move();
+        move();
+        move();
+        putBall();
+        move();
+        putBall();
+        turnRight();
+        move();
+        putBall();
+        turnRight();
+        move();
+        putBall();
+        move();
+        move();
+        move();
+        turnLeft();
+    }
+    
+    private void putInPosition() {
+        
+    }
+    
+    private void putInPosition1()
+    {
+        move();
+        move();
+        move();
+    }
+    private void turnRight()
+        {
+            turnLeft();
+            turnLeft();
+            turnLeft();
+        }
+
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.7.4: The Two Towers + Comments
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class TwoTowersKarel extends Karel
+{
+    public void run()
+    {
+        move();
+        buildTower();
+        comeDown();
+        move();
+        move();
+        buildTower();
+        move();
+        turnRight();
+    }
+    
+    //Turns Carol right
+    
+    private void turnRight()
+    {
+        turnLeft();
+        turnLeft();
+        turnLeft();
+    }
+    
+    //turns carol around
+
+    private void turnAround()
+    {
+        turnLeft();
+        turnLeft();
+    }
+    
+    // Carol comes down
+    
+    private void comeDown()
+    {
+        turnAround();
+        move();
+        move();
+        turnLeft();
+    }
+    
+    //Carol builds the tower
+    
+    private void buildTower()
+    {
+        turnLeft();
+        putBall();
+        move();
+        putBall();
+        move();
+        putBall();
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.8.4: The Two Towers + Super...
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class FunProgram extends Superkarel
+{
+
+    public void run()
+    {
+        buildTower();
+        comeBack();
+        move();
+        buildTower();
+        move();
+        turnRight();
+    }
+    
+    private void buildTower()
+    {
+        move();
+        putBall();
+        turnLeft();
+        move();
+        putBall();
+        move();
+        putBall();
+    }
+    
+    private void comeBack()
+    {
+        turnLeft();
+        turnLeft();
+        move();
+        move();
+        turnLeft();
+    }
+
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.9.5: Marathon Karel
+        </h2>
+        <div>
+              <pre>
+                <span>
+// This program has Karel run a marathon,
+// which consists of 26 moves
+class MarathonKarel extends SuperKarel
+{
+    public void run()
+    {
+        for(int i = 0; i < 26; i++)
+        {
+            move();
+        }
+        
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.9.6: Take 'em All
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class TakeEmAllKarel extends SuperKarel
+{
+    public void run()
+    {
+        move();
+        for(int i = 0; i < 100; i++)
+        {
+            takeBall();
+        }
+        move();
+        
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.9.7: Dizzy Karel
+        </h2>
+        <div>
+              <pre>
+                <span>
+public void run(){   
+    for(int i = 0; i < 32; i++){
+            turnLeft();
+    }
+}                </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.9.8: For Loop Square
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class SquareKarel extends SuperKarel
+{
+    public void run() {
+        for(int i = 0; i < 4; i++){
+            putBall();
+            move();
+            turnLeft();
+        }   
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.9.9: Planting Flowers
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class KarelProgram extends Karel
+{
+    public void run()
+    {
+        for(int i = 0; i < 2; i ++)
+        {
+            putInPosition();
+            turnLeft();
+            putInPosition();
+            makeFlower();
+            putInPosition();
+            turnLeft();
+
+        }
+
+
+    }
+
+    public void putInPosition()
+    {
+        move();
+        move();
+        move();
+    }
+
+    public void makeFlower()
+    {
+        putBall();
+        move();
+        putBall();
+        turnRight();
+        move();
+        putBall();
+        turnRight();
+        move();
+        putBall();
+
+    }
+
+    public void turnRight()
+    {
+        turnLeft();
+        turnLeft();
+        turnLeft();
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.9.10: Lots of Hurdles
+        </h2>
+        <div>
+              <pre>
+                <span>
+public class HurdlesKarel extends SuperKarel
+{
+    public void run()
+    {
+        for(int i = 0; i < 5; i ++)
+        {
+            move();
+            move();
+            jumpHurdle();
+        }
+    }
+
+    public void jumpHurdle()
+    {
+        turnLeft();
+        move();
+        turnRight();
+        move();
+        turnRight();
+        move();
+        turnLeft();
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.10.4: Follow The Yellow Ball...
+        </h2>
+        <div>
+              <pre>
+                <span>
+// Follow the yellow ball road!
+// Karel moves until it's not on a tennis ball.
+public class YellowBallRoadKarel extends SuperKarel
+{
+    public void run()
+    {
+        //your code here
+        while(ballsPresent())
+        {
+            move();
+        }
+    }
+}
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.10.4: Follow The Yellow Ball...
+        </h2>
+        <div>
+              <pre>
+                <span>
+
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.10.4: Follow The Yellow Ball...
+        </h2>
+        <div>
+              <pre>
+                <span>
+
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.10.4: Follow The Yellow Ball...
+        </h2>
+        <div>
+              <pre>
+                <span>
+
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.10.4: Follow The Yellow Ball...
+        </h2>
+        <div>
+              <pre>
+                <span>
+
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.10.4: Follow The Yellow Ball...
+        </h2>
+        <div>
+              <pre>
+                <span>
+
+                    </span>
+              </pre>
+        </div>
+      </div>
+      <div style="margin: auto; margin-left: 28%; margin-top: 70px;">
+        <h2>
+            1.10.4: Follow The Yellow Ball...
+        </h2>
+        <div>
+              <pre>
+                <span>
+
+                    </span>
+              </pre>
+        </div>
+      </div>
+</div>
+      
+    
+</body>
+</html>
