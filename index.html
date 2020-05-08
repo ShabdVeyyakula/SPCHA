@@ -5,15 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>SPCHA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
 </head>
-<body>
+<body ng-app = "SPCHA">
     
+   
 
     <div class="topnav">
         <h1 style="color: white; margin-left: 30px;">Karel The Dog</h1>
       </div>
 
-      <h1 style="margin-top: 200px; margin-left: 50px;">
+      <ul style="margin-top: 200px; list-style-type: none; display: flex;">
+          <li>
+              <a href="#!karelthedog">
+                <button class="button1">
+                    Karel The Dog
+                </button>
+              </a>
+          </li>
+          <li>
+            <button class="button1">
+                Comming Soon...
+            </button>
+        </li>
+      </ul>
+
+      <script>
+        var app = angular.module("SPCHA", ["ngRoute"]);
+        app.config(function($routeProvider) {
+            $routeProvider
+            .when("/", {
+                templateUrl : "main.htm"
+            })
+            .when("/karelthedog", {
+                templateUrl : "karelthedog.htm"
+            })
+            .when("/green", {
+                templateUrl : "green.htm"
+            })
+            .when("/blue", {
+                templateUrl : "blue.htm"
+            });
+        });
+        </script>
+
+      <style>
+          .button1{
+              height: 60px;
+              width: 200px;
+              background-color: white;
+              color: black;
+              border: 2px solid orange;
+              border-radius: 40px;
+              margin-left: 30px;
+              transition: background-color 0.5s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+
+
+          }
+
+          .button1:hover{
+              background-color: orange;
+              color: white;
+              cursor: pointer;
+              transform: scale(1.1) perspective(1px);
+          }
+
+      </style>
+
+      <h1 style="margin-top: 100px; margin-left: 30px;">
           Karel the Dog
       </h1>
 
